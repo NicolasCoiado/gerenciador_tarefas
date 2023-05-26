@@ -132,12 +132,6 @@ table {
     padding: 5%;
 }
 
-.aolado {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 h1 {
     font-size: 7vw;
     font-family: 'Corbel', Helvetica, sans-serif;
@@ -147,22 +141,48 @@ h1 {
 }
 
 label {
-    font-size: 2vw;
+    font-size: 5vw;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 input {
     margin-top: 1%;
-    width: 100%;
+    width: 99%;
 }
 
-.botao {
-    margin-top: 1%;
-    border: none;
-    width: 25%;
-    height: 3vw;
-    font-family: 'Corbel', Helvetica, sans-serif;
-    font-weight: bolder;
+
+@media (min-width: 600px) {
+    .aolado {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .botao {
+        margin-top: 1%;
+        border: none;
+        width: 25%;
+        height: 3vw;
+        font-family: 'Corbel', Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .aolado {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .botao {
+        margin-top: 1%;
+        border: none;
+        width: 100%;
+        font-family: 'Corbel', Helvetica, sans-serif;
+        font-weight: bolder;
+    }
 }
 
 #lista-tarefas {
