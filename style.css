@@ -151,7 +151,7 @@ input {
 }
 
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
     .aolado {
         display: flex;
         flex-direction: row;
@@ -169,7 +169,7 @@ input {
 }
 
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .aolado {
         display: flex;
         flex-direction: column;
